@@ -456,18 +456,19 @@ export function buildAnimeStudentCharacter(textures: AcademyTextureLibrary): Stu
   hairSideRight.position.set(0.118, 0.21, -0.032);
   headGroup.add(hairSideRight);
 
-  // Articulated Twin Flowing Back Hair Clusters
-  const hairBackLeft = createHairLock(0.052, 0.42, 0.045);
-  hairBackLeft.position.set(-0.068, 0.21, 0.095);
+  // Keep the rear hair in three slim, separated locks. The previous wide,
+  // overlapping tubes merged into one dark slab in the third-person view.
+  const hairBackLeft = createHairLock(0.026, 0.34, 0.028);
+  hairBackLeft.position.set(-0.09, 0.205, 0.105);
   headGroup.add(hairBackLeft);
 
-  const hairBackRight = createHairLock(0.052, 0.42, 0.045);
-  hairBackRight.position.set(0.068, 0.21, 0.095);
+  const hairBackRight = createHairLock(0.026, 0.34, 0.028);
+  hairBackRight.position.set(0.09, 0.205, 0.105);
   headGroup.add(hairBackRight);
 
-  // Center back hair layer
-  const hairBackCenter = createHairLock(0.065, 0.39, 0.035);
-  hairBackCenter.position.set(0, 0.21, 0.105);
+  // A narrower center strand preserves a visible gap between the outer locks.
+  const hairBackCenter = createHairLock(0.022, 0.30, 0.02);
+  hairBackCenter.position.set(0, 0.205, 0.13);
   headGroup.add(hairBackCenter);
 
   // ── 4. ARMS (ROUNDED SHOULDER CAPS, UPPER ARMS, FOREARMS, HANDS) ─────────
