@@ -448,26 +448,28 @@ export function buildAnimeStudentCharacter(textures: AcademyTextureLibrary): Stu
     return g;
   }
 
-  const hairSideLeft = createHairLock(0.026, 0.25, -0.018);
-  hairSideLeft.position.set(-0.118, 0.21, -0.032);
+  const hairSideLeft = createHairLock(0.018, 0.22, -0.012);
+  hairSideLeft.position.set(-0.12, 0.205, -0.032);
   headGroup.add(hairSideLeft);
 
-  const hairSideRight = createHairLock(0.026, 0.25, -0.018);
-  hairSideRight.position.set(0.118, 0.21, -0.032);
+  const hairSideRight = createHairLock(0.018, 0.22, -0.012);
+  hairSideRight.position.set(0.12, 0.205, -0.032);
   headGroup.add(hairSideRight);
 
-  // Articulated Twin Flowing Back Hair Clusters
-  const hairBackLeft = createHairLock(0.052, 0.42, 0.045);
-  hairBackLeft.position.set(-0.068, 0.21, 0.095);
+  // Keep the rear hair in three slim, separated locks. The previous 0.05-0.065
+  // radii overlapped into one oversized cylinder that hid the head and blazer
+  // from the normal third-person camera distance, especially on mobile screens.
+  const hairBackLeft = createHairLock(0.026, 0.34, 0.028);
+  hairBackLeft.position.set(-0.09, 0.205, 0.105);
   headGroup.add(hairBackLeft);
 
-  const hairBackRight = createHairLock(0.052, 0.42, 0.045);
-  hairBackRight.position.set(0.068, 0.21, 0.095);
+  const hairBackRight = createHairLock(0.026, 0.34, 0.028);
+  hairBackRight.position.set(0.09, 0.205, 0.105);
   headGroup.add(hairBackRight);
 
-  // Center back hair layer
-  const hairBackCenter = createHairLock(0.065, 0.39, 0.035);
-  hairBackCenter.position.set(0, 0.21, 0.105);
+  // Narrow center strand leaves a visible gap between the two outer locks.
+  const hairBackCenter = createHairLock(0.022, 0.30, 0.02);
+  hairBackCenter.position.set(0, 0.205, 0.13);
   headGroup.add(hairBackCenter);
 
   // ── 4. ARMS (ROUNDED SHOULDER CAPS, UPPER ARMS, FOREARMS, HANDS) ─────────
