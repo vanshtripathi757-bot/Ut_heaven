@@ -1,0 +1,6 @@
+{
+  "name": "The School Chronicles — Aoyama Academy (Phase 1)",
+  "description": "Playable 3D Japanese academy courtyard environment and rigged anime student character showcase with third-person and first-person cameras, dynamic URP-style lighting, and Unity 6 URP source architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
